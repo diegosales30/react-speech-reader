@@ -1,5 +1,5 @@
 {
-  "name": "react-speech-reader",
+  "name": "react-speech-accessibility",
   "version": "1.0.0",
   "description": "Componente de voz acessível para sites React usando a Web Speech API",
   "main": "dist/index.js",

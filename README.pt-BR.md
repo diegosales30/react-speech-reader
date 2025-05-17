@@ -14,16 +14,16 @@ Uma biblioteca React para leitura de texto em voz alta, utilizando a Web Speech 
 ## Instalação
 
 ```bash
-npm install react-speech-reader
+npm install react-speech-accessibility
 # ou
-yarn add react-speech-reader
+yarn add react-speech-accessibility
 ```
 
 ## Uso Básico
 
 ```jsx
 import React from 'react';
-import { ReadAloud } from 'react-speech-reader';
+import { ReadAloud } from 'react-speech-accessibility';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
 O componente principal para leitura de texto.
 
 ```jsx
-import { ReadAloud } from 'react-speech-reader';
+import { ReadAloud } from 'react-speech-accessibility';
 
 // Uso básico
 <ReadAloud text="Texto a ser lido em voz alta" />
@@ -83,7 +83,7 @@ import { ReadAloud } from 'react-speech-reader';
 Painel de configuração para personalizar as opções de voz.
 
 ```jsx
-import { VoiceConfigPanel, useSpeechReader } from 'react-speech-reader';
+import { VoiceConfigPanel, useSpeechReader } from 'react-speech-accessibility';
 
 function MyComponent() {
   const speechReader = useSpeechReader();
@@ -126,7 +126,7 @@ function MyComponent() {
 Hook para utilizar a Web Speech API diretamente.
 
 ```jsx
-import { useSpeechReader } from 'react-speech-reader';
+import { useSpeechReader } from 'react-speech-accessibility';
 
 function MyComponent() {
   const {
@@ -203,7 +203,7 @@ function MyComponent() {
 
 ```jsx
 import React, { useState } from 'react';
-import { ReadAloud, VoiceConfigPanel, useSpeechReader } from 'react-speech-reader';
+import { ReadAloud, VoiceConfigPanel, useSpeechReader } from 'react-speech-accessibility';
 
 function TextReader() {
   const [options, setOptions] = useState({
@@ -247,7 +247,7 @@ function TextReader() {
 
 ```jsx
 import React from 'react';
-import { useSpeechReader } from 'react-speech-reader';
+import { useSpeechReader } from 'react-speech-accessibility';
 
 function CustomVoiceButton({ text }) {
   const { speaking, paused, speak, pause, resume, stop } = useSpeechReader();
@@ -307,6 +307,7 @@ A biblioteca utiliza a Web Speech API, que é suportada pela maioria dos navegad
 - Opera
 
 Verifique a [compatibilidade atual da Web Speech API](https://caniuse.com/?search=speech%20synthesis) para mais detalhes.
+
 
 ## Licença
 

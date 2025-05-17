@@ -1,4 +1,4 @@
-# React Speech Reader
+# React Speech Accessibility
 
 A React library for reading text aloud, using the Web Speech API to create more accessible websites.
 
@@ -14,16 +14,16 @@ A React library for reading text aloud, using the Web Speech API to create more 
 ## Installation
 
 ```bash
-npm install react-speech-reader
+npm install react-speech-accessibility
 # or
-yarn add react-speech-reader
+yarn add react-speech-accessibility
 ```
 
 ## Basic Usage
 
 ```jsx
 import React from 'react';
-import { ReadAloud } from 'react-speech-reader';
+import { ReadAloud } from 'react-speech-accessibility';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
 The main component for reading text aloud.
 
 ```jsx
-import { ReadAloud } from 'react-speech-reader';
+import { ReadAloud } from 'react-speech-accessibility';
 
 // Basic usage
 <ReadAloud text="Text to be read aloud" />
@@ -83,7 +83,7 @@ import { ReadAloud } from 'react-speech-reader';
 Configuration panel to customize voice options.
 
 ```jsx
-import { VoiceConfigPanel, useSpeechReader } from 'react-speech-reader';
+import { VoiceConfigPanel, useSpeechReader } from 'react-speech-accessibility';
 
 function MyComponent() {
   const speechReader = useSpeechReader();
@@ -126,7 +126,7 @@ function MyComponent() {
 Hook to use the Web Speech API directly.
 
 ```jsx
-import { useSpeechReader } from 'react-speech-reader';
+import { useSpeechReader } from 'react-speech-accessibility';
 
 function MyComponent() {
   const {
@@ -203,7 +203,7 @@ function MyComponent() {
 
 ```jsx
 import React, { useState } from 'react';
-import { ReadAloud, VoiceConfigPanel, useSpeechReader } from 'react-speech-reader';
+import { ReadAloud, VoiceConfigPanel, useSpeechReader } from 'react-speech-accessibility';
 
 function TextReader() {
   const [options, setOptions] = useState({
@@ -247,7 +247,7 @@ function TextReader() {
 
 ```jsx
 import React from 'react';
-import { useSpeechReader } from 'react-speech-reader';
+import { useSpeechReader } from 'react-speech-accessibility';
 
 function CustomVoiceButton({ text }) {
   const { speaking, paused, speak, pause, resume, stop } = useSpeechReader();
@@ -307,6 +307,7 @@ This library uses the Web Speech API, which is supported by most modern browsers
 - Opera
 
 Check the [current compatibility of the Web Speech API](https://caniuse.com/?search=speech%20synthesis) for more details.
+
 
 ## License
 

@@ -104,11 +104,11 @@ export const ReadAloud: React.FC<ReadAloudProps> = ({
     : icon;
   
   return (
-    <div className={`react-speech-reader ${className}`} style={{ display: 'inline-block', ...style }}>
+    <div className={`react-speech-accessibility ${className}`} style={{ display: 'inline-block', ...style }}>
       <button
         onClick={handleClick}
         aria-label={speaking ? (paused ? 'Continuar leitura' : 'Pausar leitura') : 'Ouvir texto'}
-        className="react-speech-reader-button"
+        className="react-speech-accessibility-button"
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -121,15 +121,15 @@ export const ReadAloud: React.FC<ReadAloudProps> = ({
           fontSize: '14px',
         }}
       >
-        <span className="react-speech-reader-icon">{buttonIcon}</span>
-        <span className="react-speech-reader-text">{buttonText}</span>
+        <span className="react-speech-accessibility-icon">{buttonIcon}</span>
+        <span className="react-speech-accessibility-text">{buttonText}</span>
       </button>
       
       {speaking && !paused && (
         <button
           onClick={handleStop}
           aria-label="Interromper leitura"
-          className="react-speech-reader-stop"
+          className="react-speech-accessibility-stop"
           style={{
             marginLeft: '8px',
             padding: '8px',

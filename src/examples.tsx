@@ -9,7 +9,7 @@ export function BasicExample() {
       
       {/* Importe o componente ReadAloud e passe o texto a ser lido */}
       {/* 
-      import { ReadAloud } from 'react-speech-reader';
+      import { ReadAloud } from 'react-speech-accessibility';
       
       <ReadAloud text="Este é um exemplo de texto que pode ser lido em voz alta." />
       */}
@@ -25,7 +25,7 @@ export function CustomOptionsExample() {
       <p>Este exemplo mostra como personalizar as opções de leitura.</p>
       
       {/* 
-      import { ReadAloud } from 'react-speech-reader';
+      import { ReadAloud } from 'react-speech-accessibility';
       
       <ReadAloud 
         text="Este texto será lido com velocidade mais rápida e em inglês."
@@ -52,7 +52,7 @@ export function ConfigPanelExample() {
       
       {/* 
       import React, { useState } from 'react';
-      import { ReadAloud, VoiceConfigPanel } from 'react-speech-reader';
+      import { ReadAloud, VoiceConfigPanel } from 'react-speech-accessibility';
       
       function ConfigExample() {
         const [options, setOptions] = useState({
@@ -92,7 +92,7 @@ export function CustomHookExample() {
       
       {/* 
       import React from 'react';
-      import { useSpeechReader } from 'react-speech-reader';
+      import { useSpeechReader } from 'react-speech-accessibility';
       
       function HookExample() {
         const {
@@ -143,7 +143,7 @@ export function FullyCustomButtonExample() {
       
       {/* 
       import React from 'react';
-      import { useSpeechReader } from 'react-speech-reader';
+      import { useSpeechReader } from 'react-speech-accessibility';
       
       function CustomButton({ text }) {
         const { speaking, paused, speak, pause, resume, stop } = useSpeechReader();

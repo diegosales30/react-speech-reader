@@ -207,7 +207,7 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
   
   return (
     <div 
-      className={`react-speech-reader-config ${className}`}
+      className={`react-speech-accessibility-config ${className}`}
       style={{
         border: '1px solid #ddd',
         borderRadius: '4px',
@@ -218,7 +218,7 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
       }}
     >
       <div 
-        className="react-speech-reader-config-header"
+        className="react-speech-accessibility-config-header"
         onClick={() => setExpanded(!expanded)}
         style={{
           display: 'flex',
@@ -233,17 +233,17 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
       </div>
       
       {expanded && (
-        <div className="react-speech-reader-config-content" style={{ marginTop: '10px' }}>
+        <div className="react-speech-accessibility-config-content" style={{ marginTop: '10px' }}>
           {showLanguageSelector && languages.length > 0 && (
-            <div className="react-speech-reader-config-item" style={{ marginBottom: '10px' }}>
+            <div className="react-speech-accessibility-config-item" style={{ marginBottom: '10px' }}>
               <label 
-                htmlFor="react-speech-reader-lang"
+                htmlFor="react-speech-accessibility-lang"
                 style={{ display: 'block', marginBottom: '5px', fontSize: '14px' }}
               >
                 Idioma:
               </label>
               <select
-                id="react-speech-reader-lang"
+                id="react-speech-accessibility-lang"
                 value={selectedLang}
                 onChange={handleLanguageChange}
                 style={{
@@ -263,15 +263,15 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
           )}
           
           {showVoiceSelector && availableVoices.length > 0 && (
-            <div className="react-speech-reader-config-item" style={{ marginBottom: '10px' }}>
+            <div className="react-speech-accessibility-config-item" style={{ marginBottom: '10px' }}>
               <label 
-                htmlFor="react-speech-reader-voice"
+                htmlFor="react-speech-accessibility-voice"
                 style={{ display: 'block', marginBottom: '5px', fontSize: '14px' }}
               >
                 Voz:
               </label>
               <select
-                id="react-speech-reader-voice"
+                id="react-speech-accessibility-voice"
                 value={currentVoice?.voiceURI || ''}
                 onChange={handleVoiceChange}
                 style={{
@@ -291,15 +291,15 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
           )}
           
           {showRateControl && (
-            <div className="react-speech-reader-config-item" style={{ marginBottom: '10px' }}>
+            <div className="react-speech-accessibility-config-item" style={{ marginBottom: '10px' }}>
               <label 
-                htmlFor="react-speech-reader-rate"
+                htmlFor="react-speech-accessibility-rate"
                 style={{ display: 'block', marginBottom: '5px', fontSize: '14px' }}
               >
                 Velocidade: {rate}x
               </label>
               <input
-                id="react-speech-reader-rate"
+                id="react-speech-accessibility-rate"
                 type="range"
                 min="0.5"
                 max="2"
@@ -312,15 +312,15 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
           )}
           
           {showVolumeControl && (
-            <div className="react-speech-reader-config-item" style={{ marginBottom: '10px' }}>
+            <div className="react-speech-accessibility-config-item" style={{ marginBottom: '10px' }}>
               <label 
-                htmlFor="react-speech-reader-volume"
+                htmlFor="react-speech-accessibility-volume"
                 style={{ display: 'block', marginBottom: '5px', fontSize: '14px' }}
               >
                 Volume: {Math.round(volume * 100)}%
               </label>
               <input
-                id="react-speech-reader-volume"
+                id="react-speech-accessibility-volume"
                 type="range"
                 min="0"
                 max="1"
@@ -333,15 +333,15 @@ export const VoiceConfigPanel: React.FC<VoiceConfigPanelProps> = ({
           )}
           
           {showPitchControl && (
-            <div className="react-speech-reader-config-item" style={{ marginBottom: '10px' }}>
+            <div className="react-speech-accessibility-config-item" style={{ marginBottom: '10px' }}>
               <label 
-                htmlFor="react-speech-reader-pitch"
+                htmlFor="react-speech-accessibility-pitch"
                 style={{ display: 'block', marginBottom: '5px', fontSize: '14px' }}
               >
                 Tom: {pitch}
               </label>
               <input
-                id="react-speech-reader-pitch"
+                id="react-speech-accessibility-pitch"
                 type="range"
                 min="0.5"
                 max="2"
